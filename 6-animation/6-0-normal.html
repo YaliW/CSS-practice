@@ -1,0 +1,43 @@
+<html>
+    <div class="container">
+        <div class="path">
+            <div class="avatar">
+                <img src="../assets/example.jpg" />
+            </div>
+        </div>
+    </div>
+</html>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        height: 700px;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+
+    .path {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(241, 176, 29);
+        border-radius: 200px;
+        border: solid 50px rgb(241, 176, 29);
+    }
+    .avatar {
+        animation: spin 6s infinite linear;
+        transform-origin: 50% 150px;
+    }
+    
+</style>

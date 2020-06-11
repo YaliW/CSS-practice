@@ -1,0 +1,52 @@
+<html>
+    <div class="container">
+        <div class="common normal-1">四周投影</div>
+        <div class="common normal-2">四周投影</div>
+
+        <div class="common single-shadow">单侧投影</div>
+
+        <div class="common double-shadow-1">临边投影</div>
+        <div class="common double-shadow-2">双侧投影</div>
+
+    </div>
+</html>
+<!-- X轴偏移量、Y轴偏移量、模糊半径、扩散半径和颜色 -->
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 100px;
+    }
+
+    .common {
+        background-color: rgb(241, 176, 29);
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+    }
+
+    .normal-1 {
+        box-shadow: 0 0 10px #333;
+    }
+
+    .normal-2 {
+        box-shadow: 10px 10px 20px #333;
+    }
+
+    .single-shadow {
+        box-shadow: 0 10px 10px -10px #333;
+    }
+
+    .double-shadow-1 {
+        box-shadow: 5px 5px 10px -5px #333;
+    }
+    
+    .double-shadow-2 {
+        box-shadow: -10px 0 10px -10px #333, 
+                    10px 0 10px -10px #333
+    }
+
+
+</style>

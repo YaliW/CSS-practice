@@ -1,29 +1,30 @@
 <html>
     <div class="container">
-        <div class="content" onclick="alert('I am a button')">I am a button !</div>
+        <div class="content" onclick="alert('I am a button ！')">I am a button !</div>
     </div>
 </html>
 
 <style>
     .container {
-        background-color: red;
-        width: 900px;
-        height: 900px;
+        width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
     .content {
-        background-color: yellow;   /* 默认是包含 border 的 */
-        width: 150px;
-        height: 150px;
-        padding: 10px;
-        border: 100px solid transparent;
+        background-color: rgb(107, 145, 178);   /* 默认是包含 border 的 */
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
 
         /* 设置元素的背景（背景图片或颜色）是否延伸到 border、padding、content下面。
         只有在边框（ border）被设置为非固实（soild）、透明或半透明时才能看到视觉效果（与 border-style 或 border-image 有关），
         否则，本属性产生的样式变化会被边框覆盖 */
+        border: 100px solid transparent;
         background-clip: padding-box;  
+
         box-shadow: 0 6px 8px 0 rgba(0,0,0,0.10);
     }
     .content:hover {

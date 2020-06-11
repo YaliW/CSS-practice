@@ -1,0 +1,59 @@
+<html>
+    <div class="container">
+        <div class="path">
+            <div class="avatar">
+                <img src="../assets/example.jpg" />
+            </div>
+        </div>
+    </div>
+    
+</html>
+
+<!-- CSS animation 属性是 animation-name，animation-duration, animation-timing-function，animation-delay，
+    animation-iteration-count，animation-direction，animation-fill-mode 和 animation-play-state 属性的一个简写属性形式
+transform-origin CSS属性让你更改一个元素变形的原点
+CSStransform属性允许你旋转，缩放，倾斜或平移给定元素 
+关键帧 @keyframes at-rule 规则通过在动画序列中定义关键帧（或waypoints）的样式来控制CSS动画序列中的中间步骤。
+-->
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        height: 700px;
+    }
+
+    .path {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(241, 176, 29);
+        border-radius: 200px;
+        border: solid 50px rgb(241, 176, 29);
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+
+    
+    .avatar {
+        animation: spin 6s infinite linear;
+        transform-origin: 50% 150px;  
+    }
+
+    .avatar > img {
+        animation: inherit;
+        animation-direction: reverse;
+    }
+    
+</style>

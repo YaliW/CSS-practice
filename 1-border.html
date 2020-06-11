@@ -1,12 +1,12 @@
 <html>
     <div class="container">
-        <div class="content">please look at me !</div>
+        <div class="content">Can you see my border ?</div>
     </div>
 </html>
 
 <style>
     .container {
-        background-color: red;
+        background-color: lightgray;
         width: 900px;
         height: 900px;
         display: flex;
@@ -14,12 +14,14 @@
         align-items: center;
     }
     .content {
-        background-color: yellow;   /* 默认是包含 border 的 */
-        width: 500px;
-        height: 500px;
-        padding: 50px;
+        background-color: rgb(241, 176, 29);   /* 默认是包含 border 的 */
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        text-align: center;
+        line-height: 300px;
 
-        border: 100px solid hsla(0, 0%, 100%, .5);
+        border: 10px solid hsla(0, 0%, 100%, .5);
 
         /* 设置元素的背景（背景图片或颜色）是否延伸到 border、padding、content下面。
         只有在边框（ border）被设置为非固实（soild）、透明或半透明时才能看到视觉效果（与 border-style 或 border-image 有关），
